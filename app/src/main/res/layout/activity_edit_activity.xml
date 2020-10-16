@@ -20,6 +20,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textStyle="bold"
         android:textSize="25dp"
+        android:textColorHighlight="@color/colorInput"
         android:textColor="@color/dark"
         android:textAlignment="center"
         android:layout_marginRight="25dp"
@@ -79,12 +80,14 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <!--center|center_horizontal no me esta queriendo  responder como deberia, por eso le agrego el margin top-->
         <Button
             android:id="@+id/buttonEdit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+
             android:layout_gravity="center|center_horizontal"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="170dp"
             android:text="@string/editar" />
 
     </LinearLayout>

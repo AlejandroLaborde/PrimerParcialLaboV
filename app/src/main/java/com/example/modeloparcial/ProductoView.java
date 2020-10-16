@@ -1,9 +1,7 @@
 package com.example.modeloparcial;
 
-import android.text.Editable;
+
 import android.util.Log;
-import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 
 public class ProductoView {
@@ -13,7 +11,6 @@ public class ProductoView {
     EditText precio;
     EditText nombre;
     EditText cantidad;
-    Button editButton;
 
 
     public ProductoView(Edit_activity activity, Producto prod){
@@ -34,7 +31,6 @@ public class ProductoView {
     }
 
     public void CompletarValores(){
-        Log.d("sad", this.prod.toString());
         this.precio.setText(prod.getPrice() + "");
         this.nombre.setText(prod.getNameProduct()+ "");
         this.cantidad.setText(prod.getCount() + "");
